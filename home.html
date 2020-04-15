@@ -1,180 +1,197 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <title>Todo Crud Application</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div style=background-color:#e68a00;>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-8">
-                <form id="form">
-                    <div class="form-group">
-                        <label for="todo">CREATE AN ACCOUNT</label>
-                        <div id="form_name">
-                            <div class="firstnameorlastname">
-                                <input type="text" name="Name" value="" placeholder="First Name"  class="input_name" >
-                             <form name="form" >
-                             <div id="errorBox"></div>
-                              <input type="text" name="LastName" value="" placeholder="Last Name" class="input_name" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                    <form id="form">
+                        <div class="form-group">
+                            <label for="todo">CREATE AN ACCOUNT</label>
+                            <div id="form_name">
+                                <div class="firstnameorlastname">
+                                    <input type="text" name="Name" value="" placeholder="First Name" class="input_name">
+                                    <form name="form">
+                                        <div id="errorBox"></div>
+                                        <input type="text" name="LastName" value="" placeholder="Last Name"
+                                            class="input_name">
+                                </div>
+                                <div id="email_form">
+                                    <input type="text" name="Email" value="" placeholder="Your Email"
+                                        class="input_email">
+                                </div>
+                                <div id="Re_email_form">
+                                    <input type="text" name="enterEmail" value="" placeholder="Confirm Email"
+                                        class="input_Re_email">
+                                </div>
+                                <div id="password_form">
+                                    <input type="password" name="Password" value="" placeholder="New Password"
+                                        class="input_password">
+                                </div>
+                                <input type="text" class="form-control" id="todoUserInput" placeholder="Todo">
+                                <button type="submit" class="btn btn-primary">Create</button>
                             </div>
-                            <div id="email_form">
-                              <input type="text" name="Email" value=""  placeholder="Your Email" class="input_email">
-                            </div>
-                            <div id="Re_email_form">
-                              <input type="text" name="enterEmail" value=""  placeholder="Confirm Email" class="input_Re_email">
-                            </div>
-                            <div id="password_form">
-                              <input type="password" name="Password" value=""  placeholder="New Password" class="input_password">
-                            </div>
-                        <input type="text" class="form-control" id="todoUserInput" placeholder="Todo">
-                        <button type="submit" class="btn btn-primary">Create</button>
-                    </div>
-                    
-                </form>
-            </div>
-            <div class="col-lg-2"></div>
-        </div>
-        <div class="row">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-8">
-                <ul class="list-group" id="display">
-                
-                </ul>
-            </div>
-            <div class="col-lg-2"></div>
-        </div> 
-        <br>
-        <div class="row">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-8">
-                <div class="alert" role="alert" id="message">
-                    
+
+                    </form>
                 </div>
+                <div class="col-lg-2"></div>
             </div>
-            <div class="col-lg-2"></div>
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                    <ul class="list-group" id="display">
+
+                    </ul>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                    <div class="alert" role="alert" id="message">
+
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+
         </div>
-           
-    </div>
 
 
 
-    <div >
-    <div style=background-color:#e67300;>
-        <footer>
-        <div class="footer-nav">
-        <div class="row hide-for-small-only">
-        <ul class="menu float-left">
-        <li><a class="track-click" data-track="homeV3" data-href=":footer/home" href="Home.html">Home</a></li>
-        <li><a class="track-click" data-track="homeV3" data-href=":footer/thepub" href="ContactUs.html">Menu</a></li>
-        <li><a class="track-click" data-track="homeV3" data-href=":footer/store" href="services1.html">Services</a></li>
-        <li><a class="track-click" data-track="homeV3" data-href=":footer/blog" href="About.html">About Us</a></li>
-        </ul>
-        <p class="float-right">© RBI Bank, Inc. 2020</p>
-        </div>
+        <div>
+            <div style=background-color:#e67300;>
+                <footer>
+                    <div class="footer-nav">
+                        <div class="row hide-for-small-only">
+                            <ul class="menu float-left">
+                                <li><a class="track-click" data-track="homeV3" data-href=":footer/home"
+                                        href="Home.html">Home</a></li>
+                                <li><a class="track-click" data-track="homeV3" data-href=":footer/thepub"
+                                        href="ContactUs.html">Menu</a></li>
+                                <li><a class="track-click" data-track="homeV3" data-href=":footer/store"
+                                        href="services1.html">Services</a></li>
+                                <li><a class="track-click" data-track="homeV3" data-href=":footer/blog"
+                                        href="About.html">About Us</a></li>
+                            </ul>
+                            <p class="float-right">© RBI Bank, Inc. 2020</p>
+                        </div>
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(()=>{
-            const display = $("#display");
-            const form = $("#form");
-            const todoUserInput = $("#todoUserInput");
-            const message = $("#message");
-            message.hide();
+                        <!-- Optional JavaScript -->
+                        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                            crossorigin="anonymous"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                            crossorigin="anonymous"></script>
+                        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+                            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                            crossorigin="anonymous"></script>
+                        <script>
+                            $(document).ready(() => {
+                                const display = $("#display");
+                                const form = $("#form");
+                                const todoUserInput = $("#todoUserInput");
+                                const message = $("#message");
+                                message.hide();
 
-            const displayMessage = (flag,msg)=>{
-                // successful
-                if(flag){
-                    message.removeClass('alert-danger');
-                    message.addClass('alert-success');
-                    message.html(msg);
-                    message.show();
-                }
-                else{
-                    message.removeClass('alert-success');
-                    message.addClass('alert-danger');
-                    message.html(msg);
-                    message.show();
-                }
-            }
- 
-            const getTodos = ()=>{
-                fetch('/getTodos',{method : "get"}).then((response)=>{
-                    return response.json();
-                }).then((data)=>{
-                    console.log(data);
-                    displayTodos(data);
-                });
-            }
+                                const displayMessage = (flag, msg) => {
+                                    // successful
+                                    if (flag) {
+                                        message.removeClass('alert-danger');
+                                        message.addClass('alert-success');
+                                        message.html(msg);
+                                        message.show();
+                                    }
+                                    else {
+                                        message.removeClass('alert-success');
+                                        message.addClass('alert-danger');
+                                        message.html(msg);
+                                        message.show();
+                                    }
+                                }
 
-            getTodos();
+                                const getTodos = () => {
+                                    fetch('/getTodos', { method: "get" }).then((response) => {
+                                        return response.json();
+                                    }).then((data) => {
+                                        console.log(data);
+                                        displayTodos(data);
+                                    });
+                                }
 
-            const resetTodosInput = ()=>{
-                todoUserInput.val('');
-            }
+                                getTodos();
 
-            const editTodo = (todo,todoID,editID)=>{
-                let editBtn = $(`#${editID}`);
-                editBtn.click(()=>{
-                    fetch(`/${todo._id}`,{
-                        method : "put",
-                        headers : {
-                            "Content-Type" : "application/json; charset=utf-8" 
-                        },
-                        body : JSON.stringify({todo : todoUserInput.val()})
-                    }).then((response)=>{
-                        return response.json();
-                    }).then((data)=>{
-                        if(data.ok == 1){
-                            let todoIndex = $(`#${todoID}`);
-                            todoIndex.html(data.value.todo);
-                            resetTodosInput();
-                        }
-                    });
-                });
-            }
+                                const resetTodosInput = () => {
+                                    todoUserInput.val('');
+                                }
 
-            const deleteTodo = (todo,listItemID,deleteID)=>{
-                let deleteBtn = $(`#${deleteID}`);
-                deleteBtn.click(()=>{
-                    fetch(`/${todo._id}`,{
-                        method: "delete"
-                    }).then((response)=>{
-                        return response.json();
-                    }).then((data)=>{
-                        if(data.ok == 1){
-                            $(`#${listItemID}`).remove();
-                        }
-                    });
-                });
-            }
+                                const editTodo = (todo, todoID, editID) => {
+                                    let editBtn = $(`#${editID}`);
+                                    editBtn.click(() => {
+                                        fetch(`/${todo._id}`, {
+                                            method: "put",
+                                            headers: {
+                                                "Content-Type": "application/json; charset=utf-8"
+                                            },
+                                            body: JSON.stringify({ todo: todoUserInput.val() })
+                                        }).then((response) => {
+                                            return response.json();
+                                        }).then((data) => {
+                                            if (data.ok == 1) {
+                                                let todoIndex = $(`#${todoID}`);
+                                                todoIndex.html(data.value.todo);
+                                                resetTodosInput();
+                                            }
+                                        });
+                                    });
+                                }
+
+                                const deleteTodo = (todo, listItemID, deleteID) => {
+                                    let deleteBtn = $(`#${deleteID}`);
+                                    deleteBtn.click(() => {
+                                        fetch(`/${todo._id}`, {
+                                            method: "delete"
+                                        }).then((response) => {
+                                            return response.json();
+                                        }).then((data) => {
+                                            if (data.ok == 1) {
+                                                $(`#${listItemID}`).remove();
+                                            }
+                                        });
+                                    });
+                                }
 
 
-            const buildIDS = (todo)=>{
-                return {
-                    editID : "edit_" + todo._id,
-                    deleteID : "delete_" + todo._id,
-                    listItemID : "listItem_" + todo._id,
-                    todoID : "todo_" + todo._id
-                }
-            }
+                                const buildIDS = (todo) => {
+                                    return {
+                                        editID: "edit_" + todo._id,
+                                        deleteID: "delete_" + todo._id,
+                                        listItemID: "listItem_" + todo._id,
+                                        todoID: "todo_" + todo._id
+                                    }
+                                }
 
-            const buildTemplate = (todo,ids)=>{
-                return `<li class="list-group-item" id="${ids.listItemID}">
+                                const buildTemplate = (todo, ids) => {
+                                    return `<li class="list-group-item" id="${ids.listItemID}">
                             <div class="row">
                                 <div class="col-md-4" id="${ids.todoID}">${todo.todo}</div>
                                 <div class="col-md-4"></div>
@@ -184,46 +201,47 @@
                                 </div>
                             </div>
                        </li>`;
-            }
+                                }
 
-            const displayTodos = (data)=>{
-                data.forEach((todo)=>{
-                    let ids = buildIDS(todo);
-                    display.append(buildTemplate(todo,ids));
-                    editTodo(todo,ids.todoID,ids.editID);
-                    deleteTodo(todo,ids.listItemID,ids.deleteID);
-                });
-            }
+                                const displayTodos = (data) => {
+                                    data.forEach((todo) => {
+                                        let ids = buildIDS(todo);
+                                        display.append(buildTemplate(todo, ids));
+                                        editTodo(todo, ids.todoID, ids.editID);
+                                        deleteTodo(todo, ids.listItemID, ids.deleteID);
+                                    });
+                                }
 
-            form.submit((e)=>{
-                e.preventDefault();
-                fetch('/',{
-                    method : 'post',
-                    body : JSON.stringify({todo : todoUserInput.val()}),
-                    headers : {
-                        "Content-Type" : "application/json; charset=utf-8"
-                    }
-                }).then((response)=>{
-                    return response.json();
-                }).then((data)=>{
-                    if(!data.error){
-                        if(data.result.ok == 1 && data.result.n == 1){
-                            let ids = buildIDS(data.document);
-                            display.append(buildTemplate(data.document,ids));
-                            editTodo(data.document,ids.todoID,ids.editID);
-                            deleteTodo(data.document,ids.listItemID,ids.deleteID);
-                            displayMessage(true,data.msg);
-                        }
-                    }
-                    else
-                        displayMessage(false,data.error.message);
+                                form.submit((e) => {
+                                    e.preventDefault();
+                                    fetch('/', {
+                                        method: 'post',
+                                        body: JSON.stringify({ todo: todoUserInput.val() }),
+                                        headers: {
+                                            "Content-Type": "application/json; charset=utf-8"
+                                        }
+                                    }).then((response) => {
+                                        return response.json();
+                                    }).then((data) => {
+                                        if (!data.error) {
+                                            if (data.result.ok == 1 && data.result.n == 1) {
+                                                let ids = buildIDS(data.document);
+                                                display.append(buildTemplate(data.document, ids));
+                                                editTodo(data.document, ids.todoID, ids.editID);
+                                                deleteTodo(data.document, ids.listItemID, ids.deleteID);
+                                                displayMessage(true, data.msg);
+                                            }
+                                        }
+                                        else
+                                            displayMessage(false, data.error.message);
 
-                    resetTodosInput();
-                    
-                });
-            });
+                                        resetTodosInput();
 
-        });
-    </script>
+                                    });
+                                });
+
+                            });
+                        </script>
 </body>
+
 </html>
